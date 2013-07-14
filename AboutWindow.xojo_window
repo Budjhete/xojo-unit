@@ -78,7 +78,6 @@ Begin Window AboutWindow
       TabStop         =   True
       Text            =   "XojoUnit"
       TextAlign       =   1
-      TextColor       =   
       TextFont        =   "System"
       TextSize        =   14.0
       TextUnit        =   0
@@ -113,7 +112,6 @@ Begin Window AboutWindow
       TabStop         =   True
       Text            =   "Version"
       TextAlign       =   1
-      TextColor       =   
       TextFont        =   "SmallSystem"
       TextSize        =   0.0
       TextUnit        =   0

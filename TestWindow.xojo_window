@@ -781,7 +781,7 @@ Begin Window TestWindow
       Left            =   -40
       LockedInPosition=   False
       Scope           =   "0"
-      TabIndex        =   3
+      TabIndex        =   "3"
       TabPanelIndex   =   0
       TabStop         =   True
       Top             =   639

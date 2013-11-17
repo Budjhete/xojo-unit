@@ -263,7 +263,6 @@ Protected Class Assert
 			Group="ID"
 			InitialValue="-2147483648"
 			Type="Integer"
-			InheritedFrom="Object"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Left"
@@ -271,21 +270,18 @@ Protected Class Assert
 			Group="Position"
 			InitialValue="0"
 			Type="Integer"
-			InheritedFrom="Object"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Name"
 			Visible=true
 			Group="ID"
 			Type="String"
-			InheritedFrom="Object"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Super"
 			Visible=true
 			Group="ID"
 			Type="String"
-			InheritedFrom="Object"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Top"
@@ -293,7 +289,6 @@ Protected Class Assert
 			Group="Position"
 			InitialValue="0"
 			Type="Integer"
-			InheritedFrom="Object"
 		#tag EndViewProperty
 	#tag EndViewBehavior
 End Class

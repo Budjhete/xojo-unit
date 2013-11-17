@@ -7,6 +7,7 @@ Begin Window TestWindow
    Composite       =   False
    Frame           =   0
    FullScreen      =   False
+   FullScreenButton=   False
    HasBackColor    =   False
    Height          =   600
    ImplicitInstance=   True
@@ -72,6 +73,7 @@ Begin Window TestWindow
       UseFocusRing    =   False
       Visible         =   True
       Width           =   274
+      _ScrollOffset   =   0
       _ScrollWidth    =   -1
    End
    Begin GroupBox GroupBox1
@@ -1046,7 +1048,6 @@ End
 		Group="Appearance"
 		InitialValue="&hFFFFFF"
 		Type="Color"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Backdrop"
@@ -1054,7 +1055,6 @@ End
 		Group="Appearance"
 		Type="Picture"
 		EditorType="Picture"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="CloseButton"
@@ -1063,7 +1063,6 @@ End
 		InitialValue="True"
 		Type="Boolean"
 		EditorType="Boolean"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Composite"
@@ -1071,7 +1070,6 @@ End
 		Group="Appearance"
 		InitialValue="False"
 		Type="Boolean"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Frame"
@@ -1080,7 +1078,6 @@ End
 		InitialValue="0"
 		Type="Integer"
 		EditorType="Enum"
-		InheritedFrom="Window"
 		#tag EnumValues
 			"0 - Document"
 			"1 - Movable Modal"
@@ -1103,7 +1100,14 @@ End
 		InitialValue="False"
 		Type="Boolean"
 		EditorType="Boolean"
-		InheritedFrom="Window"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="FullScreenButton"
+		Visible=true
+		Group="Appearance"
+		InitialValue="False"
+		Type="Boolean"
+		EditorType="Boolean"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="HasBackColor"
@@ -1111,7 +1115,6 @@ End
 		Group="Appearance"
 		InitialValue="False"
 		Type="Boolean"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Height"
@@ -1119,7 +1122,6 @@ End
 		Group="Position"
 		InitialValue="400"
 		Type="Integer"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="ImplicitInstance"
@@ -1128,14 +1130,12 @@ End
 		InitialValue="True"
 		Type="Boolean"
 		EditorType="Boolean"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Interfaces"
 		Visible=true
 		Group="ID"
 		Type="String"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="LiveResize"
@@ -1144,7 +1144,6 @@ End
 		InitialValue="True"
 		Type="Boolean"
 		EditorType="Boolean"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="MacProcID"
@@ -1152,7 +1151,6 @@ End
 		Group="Appearance"
 		InitialValue="0"
 		Type="Integer"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="MaxHeight"
@@ -1160,7 +1158,6 @@ End
 		Group="Position"
 		InitialValue="32000"
 		Type="Integer"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="MaximizeButton"
@@ -1169,7 +1166,6 @@ End
 		InitialValue="False"
 		Type="Boolean"
 		EditorType="Boolean"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="MaxWidth"
@@ -1177,7 +1173,6 @@ End
 		Group="Position"
 		InitialValue="32000"
 		Type="Integer"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="MenuBar"
@@ -1185,7 +1180,6 @@ End
 		Group="Appearance"
 		Type="MenuBar"
 		EditorType="MenuBar"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="MenuBarVisible"
@@ -1194,7 +1188,6 @@ End
 		InitialValue="True"
 		Type="Boolean"
 		EditorType="Boolean"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="MinHeight"
@@ -1202,7 +1195,6 @@ End
 		Group="Position"
 		InitialValue="64"
 		Type="Integer"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="MinimizeButton"
@@ -1211,7 +1203,6 @@ End
 		InitialValue="True"
 		Type="Boolean"
 		EditorType="Boolean"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="MinWidth"
@@ -1219,14 +1210,12 @@ End
 		Group="Position"
 		InitialValue="64"
 		Type="Integer"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Name"
 		Visible=true
 		Group="ID"
 		Type="String"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Placement"
@@ -1235,7 +1224,6 @@ End
 		InitialValue="0"
 		Type="Integer"
 		EditorType="Enum"
-		InheritedFrom="Window"
 		#tag EnumValues
 			"0 - Default"
 			"1 - Parent Window"
@@ -1251,14 +1239,12 @@ End
 		InitialValue="True"
 		Type="Boolean"
 		EditorType="Boolean"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Super"
 		Visible=true
 		Group="ID"
 		Type="String"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Title"
@@ -1266,7 +1252,6 @@ End
 		Group="Appearance"
 		InitialValue="Untitled"
 		Type="String"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Visible"
@@ -1275,7 +1260,6 @@ End
 		InitialValue="True"
 		Type="Boolean"
 		EditorType="Boolean"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Width"
@@ -1283,6 +1267,5 @@ End
 		Group="Position"
 		InitialValue="600"
 		Type="Integer"
-		InheritedFrom="Window"
 	#tag EndViewProperty
 #tag EndViewBehavior

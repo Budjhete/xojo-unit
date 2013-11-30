@@ -42,7 +42,6 @@ Protected Class TestResult
 			Group="ID"
 			InitialValue="-2147483648"
 			Type="Integer"
-			InheritedFrom="Object"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Left"
@@ -50,7 +49,6 @@ Protected Class TestResult
 			Group="Position"
 			InitialValue="0"
 			Type="Integer"
-			InheritedFrom="Object"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Message"
@@ -63,7 +61,6 @@ Protected Class TestResult
 			Visible=true
 			Group="ID"
 			Type="String"
-			InheritedFrom="Object"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Result"
@@ -76,7 +73,6 @@ Protected Class TestResult
 			Visible=true
 			Group="ID"
 			Type="String"
-			InheritedFrom="Object"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="TestName"
@@ -90,7 +86,6 @@ Protected Class TestResult
 			Group="Position"
 			InitialValue="0"
 			Type="Integer"
-			InheritedFrom="Object"
 		#tag EndViewProperty
 	#tag EndViewBehavior
 End Class

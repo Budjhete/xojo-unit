@@ -289,7 +289,6 @@ Protected Class TestGroup
 			Group="ID"
 			InitialValue="-2147483648"
 			Type="Integer"
-			InheritedFrom="Object"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Left"
@@ -297,14 +296,12 @@ Protected Class TestGroup
 			Group="Position"
 			InitialValue="0"
 			Type="Integer"
-			InheritedFrom="Object"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Name"
 			Visible=true
 			Group="ID"
 			Type="String"
-			InheritedFrom="Object"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="PassedTestCount"
@@ -326,7 +323,6 @@ Protected Class TestGroup
 			Visible=true
 			Group="ID"
 			Type="String"
-			InheritedFrom="Object"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="TestCount"
@@ -339,7 +335,6 @@ Protected Class TestGroup
 			Group="Position"
 			InitialValue="0"
 			Type="Integer"
-			InheritedFrom="Object"
 		#tag EndViewProperty
 	#tag EndViewBehavior
 End Class

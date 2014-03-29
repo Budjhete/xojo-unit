@@ -58,7 +58,7 @@ Begin Window TestWindow
       LockRight       =   False
       LockTop         =   True
       RequiresSelection=   False
-      Scope           =   "0"
+      Scope           =   0
       ScrollbarHorizontal=   False
       ScrollBarVertical=   True
       SelectionType   =   0
@@ -92,7 +92,7 @@ Begin Window TestWindow
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
-      Scope           =   "0"
+      Scope           =   0
       TabIndex        =   1
       TabPanelIndex   =   0
       TabStop         =   True
@@ -121,7 +121,7 @@ Begin Window TestWindow
          LockRight       =   False
          LockTop         =   True
          Multiline       =   False
-         Scope           =   "0"
+         Scope           =   0
          Selectable      =   False
          TabIndex        =   0
          TabPanelIndex   =   0
@@ -156,7 +156,7 @@ Begin Window TestWindow
          LockRight       =   False
          LockTop         =   True
          Multiline       =   False
-         Scope           =   "0"
+         Scope           =   0
          Selectable      =   False
          TabIndex        =   1
          TabPanelIndex   =   0
@@ -191,7 +191,7 @@ Begin Window TestWindow
          LockRight       =   False
          LockTop         =   True
          Multiline       =   False
-         Scope           =   "0"
+         Scope           =   0
          Selectable      =   False
          TabIndex        =   2
          TabPanelIndex   =   0
@@ -226,7 +226,7 @@ Begin Window TestWindow
          LockRight       =   False
          LockTop         =   True
          Multiline       =   False
-         Scope           =   "0"
+         Scope           =   0
          Selectable      =   False
          TabIndex        =   3
          TabPanelIndex   =   0
@@ -261,7 +261,7 @@ Begin Window TestWindow
          LockRight       =   False
          LockTop         =   True
          Multiline       =   False
-         Scope           =   "0"
+         Scope           =   0
          Selectable      =   False
          TabIndex        =   4
          TabPanelIndex   =   0
@@ -296,7 +296,7 @@ Begin Window TestWindow
          LockRight       =   False
          LockTop         =   True
          Multiline       =   False
-         Scope           =   "0"
+         Scope           =   0
          Selectable      =   False
          TabIndex        =   5
          TabPanelIndex   =   0
@@ -331,7 +331,7 @@ Begin Window TestWindow
          LockRight       =   False
          LockTop         =   True
          Multiline       =   False
-         Scope           =   "0"
+         Scope           =   0
          Selectable      =   False
          TabIndex        =   6
          TabPanelIndex   =   0
@@ -366,7 +366,7 @@ Begin Window TestWindow
          LockRight       =   False
          LockTop         =   True
          Multiline       =   False
-         Scope           =   "0"
+         Scope           =   0
          Selectable      =   False
          TabIndex        =   7
          TabPanelIndex   =   0
@@ -401,7 +401,7 @@ Begin Window TestWindow
          LockRight       =   False
          LockTop         =   True
          Multiline       =   False
-         Scope           =   "0"
+         Scope           =   0
          Selectable      =   False
          TabIndex        =   8
          TabPanelIndex   =   0
@@ -436,7 +436,7 @@ Begin Window TestWindow
          LockRight       =   False
          LockTop         =   True
          Multiline       =   False
-         Scope           =   "0"
+         Scope           =   0
          Selectable      =   False
          TabIndex        =   9
          TabPanelIndex   =   0
@@ -471,7 +471,7 @@ Begin Window TestWindow
          LockRight       =   False
          LockTop         =   True
          Multiline       =   False
-         Scope           =   "0"
+         Scope           =   0
          Selectable      =   False
          TabIndex        =   10
          TabPanelIndex   =   0
@@ -506,7 +506,7 @@ Begin Window TestWindow
          LockRight       =   False
          LockTop         =   True
          Multiline       =   False
-         Scope           =   "0"
+         Scope           =   0
          Selectable      =   False
          TabIndex        =   11
          TabPanelIndex   =   0
@@ -540,7 +540,7 @@ Begin Window TestWindow
       LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
-      Scope           =   "0"
+      Scope           =   0
       TabIndex        =   5
       TabPanelIndex   =   0
       TabStop         =   True
@@ -569,7 +569,7 @@ Begin Window TestWindow
          LockRight       =   True
          LockTop         =   True
          Multiline       =   False
-         Scope           =   "0"
+         Scope           =   0
          Selectable      =   False
          TabIndex        =   0
          TabPanelIndex   =   0
@@ -604,7 +604,7 @@ Begin Window TestWindow
          LockRight       =   False
          LockTop         =   True
          Multiline       =   False
-         Scope           =   "0"
+         Scope           =   0
          Selectable      =   False
          TabIndex        =   1
          TabPanelIndex   =   0
@@ -639,7 +639,7 @@ Begin Window TestWindow
          LockRight       =   False
          LockTop         =   True
          Multiline       =   False
-         Scope           =   "0"
+         Scope           =   0
          Selectable      =   False
          TabIndex        =   2
          TabPanelIndex   =   0
@@ -686,7 +686,7 @@ Begin Window TestWindow
          Mask            =   ""
          Multiline       =   True
          ReadOnly        =   False
-         Scope           =   "0"
+         Scope           =   0
          ScrollbarHorizontal=   False
          ScrollbarVertical=   True
          Styled          =   True
@@ -722,7 +722,7 @@ Begin Window TestWindow
          LockRight       =   False
          LockTop         =   True
          Multiline       =   False
-         Scope           =   "0"
+         Scope           =   0
          Selectable      =   False
          TabIndex        =   4
          TabPanelIndex   =   0
@@ -757,7 +757,7 @@ Begin Window TestWindow
          LockRight       =   True
          LockTop         =   True
          Multiline       =   False
-         Scope           =   "0"
+         Scope           =   0
          Selectable      =   False
          TabIndex        =   5
          TabPanelIndex   =   0
@@ -782,7 +782,7 @@ Begin Window TestWindow
       InitialParent   =   ""
       Left            =   -40
       LockedInPosition=   False
-      Scope           =   "0"
+      Scope           =   0
       TabIndex        =   "3"
       TabPanelIndex   =   0
       TabStop         =   True

@@ -85,6 +85,8 @@ Protected Class TestGroup
 
 	#tag Method, Flags = &h21
 		Private Sub RunTests()
+		  #pragma BreakOnExceptions False
+		  
 		  Dim info As Introspection.TypeInfo
 		  
 		  info = Introspection.GetType(Self)

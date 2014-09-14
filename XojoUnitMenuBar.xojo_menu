@@ -5,6 +5,7 @@ Begin Menu XojoUnitMenuBar
       Text = "&File"
       Index = -2147483648
       AutoEnable = True
+      Visible = True
       Begin MenuItem FileRunTests
          SpecialMenu = 0
          Text = "&Run Tests"
@@ -13,6 +14,7 @@ Begin Menu XojoUnitMenuBar
          Shortcut = "Cmd+R"
          MenuModifier = True
          AutoEnable = True
+         Visible = True
       End
       Begin QuitMenuItem FileQuit
          SpecialMenu = 0
@@ -21,6 +23,7 @@ Begin Menu XojoUnitMenuBar
          ShortcutKey = "#App.kFileQuitShortcut"
          Shortcut = "#App.kFileQuitShortcut"
          AutoEnable = True
+         Visible = True
       End
    End
    Begin MenuItem EditMenu
@@ -28,6 +31,7 @@ Begin Menu XojoUnitMenuBar
       Text = "&Edit"
       Index = -2147483648
       AutoEnable = True
+      Visible = True
       Begin MenuItem EditUndo
          SpecialMenu = 0
          Text = "&Undo"
@@ -36,12 +40,14 @@ Begin Menu XojoUnitMenuBar
          Shortcut = "Cmd+Z"
          MenuModifier = True
          AutoEnable = True
+         Visible = True
       End
       Begin MenuItem UntitledMenu1
          SpecialMenu = 0
          Text = "-"
          Index = -2147483648
          AutoEnable = True
+         Visible = True
       End
       Begin MenuItem EditCut
          SpecialMenu = 0
@@ -51,6 +57,7 @@ Begin Menu XojoUnitMenuBar
          Shortcut = "Cmd+X"
          MenuModifier = True
          AutoEnable = True
+         Visible = True
       End
       Begin MenuItem EditCopy
          SpecialMenu = 0
@@ -60,6 +67,7 @@ Begin Menu XojoUnitMenuBar
          Shortcut = "Cmd+C"
          MenuModifier = True
          AutoEnable = True
+         Visible = True
       End
       Begin MenuItem EditPaste
          SpecialMenu = 0
@@ -69,18 +77,21 @@ Begin Menu XojoUnitMenuBar
          Shortcut = "Cmd+V"
          MenuModifier = True
          AutoEnable = True
+         Visible = True
       End
       Begin MenuItem EditClear
          SpecialMenu = 0
          Text = "#App.kEditClear"
          Index = -2147483648
          AutoEnable = True
+         Visible = True
       End
       Begin MenuItem UntitledMenu0
          SpecialMenu = 0
          Text = "-"
          Index = -2147483648
          AutoEnable = True
+         Visible = True
       End
       Begin MenuItem EditSelectAll
          SpecialMenu = 0
@@ -90,6 +101,7 @@ Begin Menu XojoUnitMenuBar
          Shortcut = "Cmd+A"
          MenuModifier = True
          AutoEnable = True
+         Visible = True
       End
       Begin MenuItem EditClearAll
          SpecialMenu = 0
@@ -99,6 +111,7 @@ Begin Menu XojoUnitMenuBar
          Shortcut = "Cmd+-"
          MenuModifier = True
          AutoEnable = True
+         Visible = True
       End
    End
    Begin MenuItem HelpMenu
@@ -106,11 +119,13 @@ Begin Menu XojoUnitMenuBar
       Text = "&Help"
       Index = -2147483648
       AutoEnable = True
+      Visible = True
       Begin AppleMenuItem HelpAboutXojoUnit
          SpecialMenu = 0
          Text = "&About XojoUnit"
          Index = -2147483648
          AutoEnable = True
+         Visible = True
       End
    End
 End

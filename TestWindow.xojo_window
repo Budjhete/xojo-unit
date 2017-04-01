@@ -1021,7 +1021,7 @@ End
 	#tag Event
 		Function CellTextPaint(g As Graphics, row As Integer, column As Integer, x as Integer, y as Integer) As Boolean
 		  If Me.Cell(row, 1) = TestResult.Failed Then
-		    g.ForeColor = &cFF0000
+		    g.ForeColor = RGB(255,0,0)
 		    g.Bold = True
 		  Else
 		    g.ForeColor = &c000000

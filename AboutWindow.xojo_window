@@ -133,7 +133,7 @@ End
 #tag Events AppIcon
 	#tag Event
 		Sub Paint(g As Graphics, areas() As REALbasic.Rect)
-		  g.DrawPicture(bug, 0, 0, g.Width, g.Height, 0, 0, bug.Width, bug.Height)
+		  g.DrawPicture(bug_32, 0, 0, g.Width, g.Height, 0, 0, bug_32.Width, bug_32.Height)
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -193,7 +193,6 @@ End
 			"7 - Global Floating Window"
 			"8 - Sheet Window"
 			"9 - Metal Window"
-			"10 - Drawer Window"
 			"11 - Modeless Dialog"
 		#tag EndEnumValues
 	#tag EndViewProperty
@@ -240,6 +239,7 @@ End
 		Visible=true
 		Group="ID"
 		Type="String"
+		EditorType="String"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="LiveResize"
@@ -320,6 +320,7 @@ End
 		Visible=true
 		Group="ID"
 		Type="String"
+		EditorType="String"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Placement"
@@ -349,6 +350,7 @@ End
 		Visible=true
 		Group="ID"
 		Type="String"
+		EditorType="String"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Title"

@@ -18,7 +18,7 @@ Begin Menu XojoUnitMenuBar
       End
       Begin QuitMenuItem FileQuit
          SpecialMenu = 0
-         Text = "#App.kFileQuit"
+         Text = "Quit"
          Index = -2147483648
          ShortcutKey = "#App.kFileQuitShortcut"
          Shortcut = "#App.kFileQuitShortcut"

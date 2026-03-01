@@ -8,6 +8,7 @@ Inherits TestController
 		  Dim group As TestGroup
 		  
 		  group = New XojoUnitTests(Self, "Assertion")
+		  group = New CompanyDatabaseUnitTests(Self, "Company DB")
 		  
 		End Sub
 	#tag EndEvent

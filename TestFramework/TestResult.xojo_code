@@ -1,6 +1,10 @@
 #tag Class
 Protected Class TestResult
 	#tag Property, Flags = &h0
+		DebugDetails As String
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
 		Duration As Double
 	#tag EndProperty
 
@@ -31,6 +35,12 @@ Protected Class TestResult
 
 
 	#tag ViewBehavior
+		#tag ViewProperty
+			Name="DebugDetails"
+			Group="Behavior"
+			Type="String"
+			EditorType="MultiLineEditor"
+		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Duration"
 			Group="Behavior"

@@ -9,6 +9,7 @@ Protected Class TestGroup
 		      tr.Result = TestResult.NotImplemented
 		    End If
 		    tr.Message = ""
+		    tr.DebugDetails = ""
 		    tr.Duration = 0
 		  Next
 		End Sub
@@ -108,14 +109,25 @@ Protected Class TestGroup
 		        EndTimer
 		        
 		      Catch e As RuntimeException
+		        EndTimer
+		        
 		        Dim eInfo As Introspection.TypeInfo
 		        eInfo = Introspection.GetType(e)
 		        
 		        Dim errorMessage As String
 		        errorMessage = "A " + eInfo.FullName + " occurred and was caught."
+		        If CurrentTestResult <> Nil Then
+		          errorMessage = errorMessage + EndOfLine + "Test: " + CurrentTestResult.TestName
+		        End If
 		        If e.Message <> "" Then
 		          errorMessage = errorMessage + EndOfLine + "Message: " + e.Message
 		        End If
+		        
+		        Dim stack() As String = e.Stack()
+		        If stack.Count > 0 Then
+		          errorMessage = errorMessage + EndOfLine + "Stack:" + EndOfLine + String.FromArray(stack, EndOfLine)
+		        End If
+		        
 		        Assert.Fail(errorMessage)
 		      End Try
 		      

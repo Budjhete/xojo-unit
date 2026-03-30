@@ -9,6 +9,7 @@ Inherits TestController
 		  
 		  group = New XojoUnitTests(Self, "Assertion")
 		  group = New CompanyDatabaseUnitTests(Self, "Company DB")
+		  group = New UpdaterUnitTests(Self, "Updater")
 		  
 		End Sub
 	#tag EndEvent

@@ -10,6 +10,9 @@ Inherits TestController
 		  group = New XojoUnitTests(Self, "Assertion")
 		  group = New CompanyDatabaseUnitTests(Self, "Company DB")
 		  group = New UpdaterUnitTests(Self, "Updater")
+		  #If DebugBuild Then
+		    group = New PlistConfigurationRecoveryTests(Self, "Preferences recovery")
+		  #EndIf
 		  
 		End Sub
 	#tag EndEvent

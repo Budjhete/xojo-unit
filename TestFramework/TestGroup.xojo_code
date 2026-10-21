@@ -78,6 +78,24 @@ Protected Class TestGroup
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h21
+		Private Sub RecordException(caughtError As RuntimeException)
+		  Var errorInfo As Introspection.TypeInfo = Introspection.GetType(caughtError)
+		  Var errorMessage As String = "A " + errorInfo.FullName + " occurred and was caught."
+		  If CurrentTestResult <> Nil Then
+		    errorMessage = errorMessage + EndOfLine + "Test: " + CurrentTestResult.TestName
+		  End If
+		  If caughtError.Message <> "" Then
+		    errorMessage = errorMessage + EndOfLine + "Message: " + caughtError.Message
+		  End If
+		  Var stack() As String = caughtError.Stack()
+		  If stack.Count > 0 Then
+		    errorMessage = errorMessage + EndOfLine + "Stack:" + EndOfLine + String.FromArray(stack, EndOfLine)
+		  End If
+		  Assert.Fail(errorMessage)
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0
 		Function Results() As TestResult()
 		  Return mResults
@@ -88,49 +106,28 @@ Protected Class TestGroup
 		Private Sub RunTests()
 		  #pragma BreakOnExceptions False
 		  
-		  Dim info As Introspection.TypeInfo
-		  
-		  info = Introspection.GetType(Self)
-		  
-		  Dim methods() As Introspection.MethodInfo
-		  methods = info.GetMethods
+		  Var info As Introspection.TypeInfo = Introspection.GetType(Self)
+		  Var methods() As Introspection.MethodInfo = info.GetMethods
 		  
 		  For Each m As Introspection.MethodInfo In methods
-		    Dim param() As Variant
-		    Dim rv As Variant
+		    Var param() As Variant
+		    Var rv As Variant
 		    
 		    If m.Name.Right(4) = kTestSuffix Then
-		      
+		      CurrentTestResult = GetTestResult(m.Name)
+		      StartTimer
 		      Try
-		        CurrentTestResult = GetTestResult(m.Name)
-		        
-		        StartTimer
+		        RaiseEvent Setup
 		        rv = m.Invoke(Self, param)
-		        EndTimer
-		        
-		      Catch e As RuntimeException
-		        EndTimer
-		        
-		        Dim eInfo As Introspection.TypeInfo
-		        eInfo = Introspection.GetType(e)
-		        
-		        Dim errorMessage As String
-		        errorMessage = "A " + eInfo.FullName + " occurred and was caught."
-		        If CurrentTestResult <> Nil Then
-		          errorMessage = errorMessage + EndOfLine + "Test: " + CurrentTestResult.TestName
-		        End If
-		        If e.Message <> "" Then
-		          errorMessage = errorMessage + EndOfLine + "Message: " + e.Message
-		        End If
-		        
-		        Dim stack() As String = e.Stack()
-		        If stack.Count > 0 Then
-		          errorMessage = errorMessage + EndOfLine + "Stack:" + EndOfLine + String.FromArray(stack, EndOfLine)
-		        End If
-		        
-		        Assert.Fail(errorMessage)
+		      Catch caughtError As RuntimeException
+		        RecordException(caughtError)
 		      End Try
-		      
+		      Try
+		        RaiseEvent TearDown
+		      Catch caughtError As RuntimeException
+		        RecordException(caughtError)
+		      End Try
+		      EndTimer
 		    End If
 		    
 		  Next
@@ -141,9 +138,7 @@ Protected Class TestGroup
 		Sub Start()
 		  If IncludeGroup Then
 		    ClearResults
-		    RaiseEvent Setup
 		    RunTests
-		    RaiseEvent TearDown
 		  Else
 		    ClearResults(True) // Mark tests as Skipped
 		  End If
